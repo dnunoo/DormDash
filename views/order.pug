@@ -1,0 +1,24 @@
+html
+  head
+    title= "DORMDASH Order Confirmed!"
+    link(rel='stylesheet' href='/styles.css')
+  body
+  div.order-container
+   div.order-wrap
+    div.order-headings
+     h1.heading Thank you for using DORMDASH!
+     h2.heading Here are your order details
+    table 
+     tbody 
+      tr
+       th Subtotal:
+        td $#{serviceTotal}
+      tr
+       th Delivery Fee:
+        td $#{feeTotal}
+      tr
+       th Order Total:
+        td $#{orderTotal}
+    div.btn-wrap
+      a(href="/")#btn-link
+       button#btn Return Home

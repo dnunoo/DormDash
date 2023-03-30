@@ -1,0 +1,138 @@
+<!-- this is where i do my frontend design, and make the ids -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      <span style="color: yellow;">U</span>STILL
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="order-details">
+      <div class="container">
+        <div class="input-forms">
+          <div class="address-details">
+            <h1>DORMDASH</h1>
+            <p>University Village Building 1 (Street) </p>
+            <p>Dover (City)</p>
+            <p>DE 19904 (Zipcode)</p>
+            <p id="address-label">Enter your dorm location below</p>
+          </div>
+          <form onsubmit="return false">
+          <div class="address-wrap">
+            <input type="text" placeholder="Street" id="DormBuilding" name="dorm_building" required />
+            <input type="text" placeholder="City" id="RoomNumber" name="room_number" required/>
+            <input
+              type="text"
+              placeholder="Zipcode"
+              id="Campus"
+              name="campus"
+              required
+            />
+          </div>
+          <div class="customer-info">
+            <p>Contact Details</p>
+            <input
+              type="text"
+              placeholder="First Name"
+              id="name"
+              name="dropoff_contact_given_name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lastname"
+              name="dropoff_contact_family_name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Phone Number"
+              id="phonenumber"
+              name="dropoff_phone_number"
+              type="number"
+              required
+            />
+          </div>
+        </div>
+        
+        <!-- <div class="dropdown">
+          <label for="stillers-dropdown">STILLERS:</label>
+          <select id="stillers-dropdown" name="stillers">
+            <option value="Deaz">Deaz</option>
+            <option value="Giovanni">G</option>
+            <option value="Pride">P</option>
+          </select>
+        </div>
+      </div> -->
+
+
+        <div class="menu-items">
+          <h2>Menu Items</h2>
+          <div class="service-option">
+            <input
+              type="checkbox"
+              name="items"
+              value="00"
+              class="service"
+          
+            />
+            <label for="items">Clothing Delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" name="items" value="00" class="service"    />
+            <label for="items">Food Delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" name="items" value="00" class="service" />
+            <label for="items">Shoe Delivery</label>
+          </div>
+          <div class="service-option"">
+            <input type="checkbox" name="items" value="00" class="service" />
+            <label for="items">Sunglasses Delivery</label>
+          </div>
+          <div class="service-option"">
+            <input type="checkbox" name="items" value="00" class="service" />
+            <label for="items">Other Delivery</label>
+          </div>
+        </div>
+        <div class="payment">
+          <div>
+            <h2>Order Summary</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Subtotal:</th>
+                  <td id="price">0.00</td>
+                </tr>
+                <tr>
+                  <th>Delivery Fee:</th>
+                  <td id="fee">$9.75</td>
+                </tr>
+                <tr>
+                  <th>Order Total:</th>
+                  <td id="total">$0.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns">
+             <!-- <button id="feeBtn" onclick="getFormValues()">
+              Get Fee
+            </button> -->
+            <button id="orderBtn" onclick="createDelivery()">
+              Place Order
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="order.js"></script>
+    <script src="delivery.js"></script>
+  </body>
+</html>
