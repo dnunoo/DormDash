@@ -13,10 +13,10 @@ A delivery service application tailored to college students.
 DormDash is a delivery service tailored to college students.
  
  ### Wireframes
- <img src="https://recordit.co/XCx7yVEaK3.gif" width=600>
+ <img src="https://recordit.co/2dROzts7Fn.gif" width=600>
  
  ### Progress
  
  Phase 1 - I made a mockup for USTILL. Next I will add functionality to the website, and make it look cleaner. 
- <img src="https://recordit.co/IsBUemPynY.gif" width=600>
+ <img src="https://recordit.co/Iek9ieowt4.gif" width=600>
  
